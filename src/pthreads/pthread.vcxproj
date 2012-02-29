@@ -84,8 +84,8 @@
     <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
     <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
     <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pthreadVC2_debug</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pthreadVC2_debug</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pthreadVC2</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pthreadVC2</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pthreadVC2</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pthreadVC2</TargetName>
   </PropertyGroup>
