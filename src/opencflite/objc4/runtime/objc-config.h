@@ -140,6 +140,8 @@
 // Get the nice macros for subroutine calling, etc.
 // Not available on all architectures.  Not needed
 // (by us) on some configurations.
-#if defined (__i386__) || defined (i386)
+//ASH: asm_help.h is missing from the source package (system file?) and
+//     seems GCC-specific anyway. Removing it for MSC.
+#if (defined (__i386__) || defined (i386)) && !defined (_MSC_VER)
 #   include <architecture/i386/asm_help.h>
 #endif
