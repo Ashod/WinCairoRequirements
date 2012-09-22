@@ -272,10 +272,12 @@ xcopy /Y /R "$(ProjectDir)..\..\..\gzguts.h" "$(SolutionDir)include\zlib"</Comma
     <MASM Include="..\..\masmx86\inffas32.asm">
       <FileType>Document</FileType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </MASM>
     <MASM Include="..\..\masmx86\match686.asm">
       <FileType>Document</FileType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </MASM>
     <None Include="zlibvc.def" />
   </ItemGroup>

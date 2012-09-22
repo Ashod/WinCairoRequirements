@@ -91,6 +91,8 @@
     <PreLinkEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</PreLinkEventUseInBuild>
     <PreBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</PreBuildEventUseInBuild>
     <PreBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</PreBuildEventUseInBuild>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)_$(Configuration)</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectName)_$(Configuration)</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
@@ -113,7 +115,6 @@ xcopy /Y /R "$(ProjectDir)..\include\*.h" "$(SolutionDir)include\"
     </PreLinkEvent>
     <Link>
       <AdditionalDependencies>netapi32.lib;ole32.lib;ws2_32.lib;kernel32.lib;rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)$(ProjectName)_$(Configuration).dll</OutputFile>
       <AdditionalLibraryDirectories>$(SolutionDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <SubSystem>Windows</SubSystem>
@@ -182,7 +183,6 @@ xcopy /Y /R "$(ProjectDir)..\include\*.h" "$(SolutionDir)include\"
     </PreLinkEvent>
     <Link>
       <AdditionalDependencies>netapi32.lib;ole32.lib;ws2_32.lib;kernel32.lib;rpcrt4.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)$(ProjectName)_$(Configuration).dll</OutputFile>
       <AdditionalLibraryDirectories>$(SolutionDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <SubSystem>Windows</SubSystem>
